@@ -29,7 +29,10 @@ while (activeFront.length > 0 && !done) {
 
     if (node.state == STATE.ACTIVE_FRONT) {
         for (var i = 0; i < 4; i++) {
-            if (!(node.x + DIRECTION[i].x > -1 && node.x + DIRECTION[i].x < this.columns && node.y + DIRECTION[i].y > -1 && node.y + DIRECTION[i].y < this.rows))
+            if (!(node.x + DIRECTION[i].x > -1 && 
+                  node.x + DIRECTION[i].x < this.columns && 
+                  node.y + DIRECTION[i].y > -1 && 
+                  node.y + DIRECTION[i].y < this.rows))
                 continue;
 
             var neighbour = this.adjacencyMatrix[node.x + DIRECTION[i].x][node.y + DIRECTION[i].y];
@@ -60,3 +63,5 @@ if (done) {
     this.drawPath();
 }
 ```
+
+For a working example, please visit http://www.tomfischer.ca/maze.html
