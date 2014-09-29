@@ -48,12 +48,6 @@ while (activeFront.length > 0 && !done) {
         node.state = STATE.VISITED;
 
         if (activeFront.length == 0) {
-            document.getElementById("breadthAni").disabled = false;
-            document.getElementById("depthAni").disabled   = false;
-            document.getElementById("breadth").disabled    = false;
-            document.getElementById("depth").disabled      = false;
-            document.getElementById("reset").disabled      = false;
-
             alert("No possible paths from red to blue!");
         }
     }
