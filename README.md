@@ -16,7 +16,7 @@ the active front are coloured with ```#555555```
 
 Here is the algorithm that drives this script
 
-```
+```javascript
 this.start.state = STATE.ACTIVE_FRONT;
 var activeFront  = [this.start];
 var done         = false;
